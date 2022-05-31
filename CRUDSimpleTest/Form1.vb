@@ -95,4 +95,9 @@ Public Class CRUDSimpleTest
             Me.SelectNextControl(sender, True, True, True, True)
         End If
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        SearchForm.Show()
+        Me.Hide()
+    End Sub
 End Class

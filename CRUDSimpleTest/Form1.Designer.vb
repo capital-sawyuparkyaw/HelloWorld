@@ -37,6 +37,7 @@ Partial Class CRUDSimpleTest
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -186,11 +187,21 @@ Partial Class CRUDSimpleTest
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 80
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(328, 50)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(33, 23)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "･･･"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'CRUDSimpleTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 703)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSearch)
@@ -227,4 +238,5 @@ Partial Class CRUDSimpleTest
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class
