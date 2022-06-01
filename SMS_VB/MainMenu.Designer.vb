@@ -29,25 +29,31 @@ Partial Class MainMenu
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Panel_Right = New System.Windows.Forms.Panel()
+        Me.btn_frm_4 = New System.Windows.Forms.Button()
+        Me.btn_frm_3 = New System.Windows.Forms.Button()
+        Me.btn_frm_2 = New System.Windows.Forms.Button()
+        Me.btn_frm_1 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel_left = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.menu_TestForm1 = New System.Windows.Forms.Button()
+        Me.menu_CRUDSimpleTest = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel_Right.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.Panel9.SuspendLayout()
+        Me.Panel_left.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -112,13 +118,6 @@ Partial Class MainMenu
         Me.Panel2.Size = New System.Drawing.Size(328, 72)
         Me.Panel2.TabIndex = 0
         '
-        'Panel8
-        '
-        Me.Panel8.Location = New System.Drawing.Point(411, 835)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1101, 71)
-        Me.Panel8.TabIndex = 4
-        '
         'Button8
         '
         Me.Button8.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bn_10
@@ -134,40 +133,138 @@ Partial Class MainMenu
         Me.Button8.Text = "終了"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Panel6
+        'Panel8
         '
-        Me.Panel6.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pm_6
-        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel6.Controls.Add(Me.Button9)
-        Me.Panel6.Location = New System.Drawing.Point(429, 91)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1083, 727)
-        Me.Panel6.TabIndex = 2
+        Me.Panel8.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pb_1
+        Me.Panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel8.Controls.Add(Me.Button11)
+        Me.Panel8.Controls.Add(Me.Button10)
+        Me.Panel8.Location = New System.Drawing.Point(411, 835)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(1101, 71)
+        Me.Panel8.TabIndex = 4
+        '
+        'Button11
+        '
+        Me.Button11.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bn_12
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.Color.White
+        Me.Button11.Location = New System.Drawing.Point(719, 3)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(334, 57)
+        Me.Button11.TabIndex = 1
+        Me.Button11.Text = "ログアウト"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bn_9
+        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.Color.Green
+        Me.Button10.Location = New System.Drawing.Point(363, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(334, 57)
+        Me.Button10.TabIndex = 0
+        Me.Button10.Text = "メッセージ"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Panel_Right
+        '
+        Me.Panel_Right.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pm_6
+        Me.Panel_Right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_Right.Controls.Add(Me.btn_frm_4)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_3)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_2)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_1)
+        Me.Panel_Right.Location = New System.Drawing.Point(429, 91)
+        Me.Panel_Right.Name = "Panel_Right"
+        Me.Panel_Right.Size = New System.Drawing.Size(1083, 727)
+        Me.Panel_Right.TabIndex = 2
+        '
+        'btn_frm_4
+        '
+        Me.btn_frm_4.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_4.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_4.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_4.Location = New System.Drawing.Point(380, 174)
+        Me.btn_frm_4.Name = "btn_frm_4"
+        Me.btn_frm_4.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_4.TabIndex = 4
+        Me.btn_frm_4.Text = "btn_frm_4"
+        Me.btn_frm_4.UseVisualStyleBackColor = False
+        '
+        'btn_frm_3
+        '
+        Me.btn_frm_3.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_3.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_3.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_3.Location = New System.Drawing.Point(15, 174)
+        Me.btn_frm_3.Name = "btn_frm_3"
+        Me.btn_frm_3.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_3.TabIndex = 3
+        Me.btn_frm_3.Text = "btn_frm_3"
+        Me.btn_frm_3.UseVisualStyleBackColor = False
+        '
+        'btn_frm_2
+        '
+        Me.btn_frm_2.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_2.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_2.Location = New System.Drawing.Point(380, 22)
+        Me.btn_frm_2.Name = "btn_frm_2"
+        Me.btn_frm_2.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_2.TabIndex = 2
+        Me.btn_frm_2.Text = "btn_frm_2"
+        Me.btn_frm_2.UseVisualStyleBackColor = True
+        '
+        'btn_frm_1
+        '
+        Me.btn_frm_1.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_1.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_1.Location = New System.Drawing.Point(15, 23)
+        Me.btn_frm_1.Name = "btn_frm_1"
+        Me.btn_frm_1.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_1.TabIndex = 1
+        Me.btn_frm_1.Text = "btn_frm_1"
+        Me.btn_frm_1.UseVisualStyleBackColor = False
         '
         'Panel5
         '
         Me.Panel5.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pn_1
         Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel5.Controls.Add(Me.Panel9)
+        Me.Panel5.Controls.Add(Me.Panel_left)
         Me.Panel5.Location = New System.Drawing.Point(4, 88)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(408, 735)
         Me.Panel5.TabIndex = 1
         '
-        'Panel9
+        'Panel_left
         '
-        Me.Panel9.AutoScroll = True
-        Me.Panel9.Controls.Add(Me.Button7)
-        Me.Panel9.Controls.Add(Me.Button6)
-        Me.Panel9.Controls.Add(Me.Button5)
-        Me.Panel9.Controls.Add(Me.Button4)
-        Me.Panel9.Controls.Add(Me.Button3)
-        Me.Panel9.Controls.Add(Me.Button2)
-        Me.Panel9.Controls.Add(Me.Button1)
-        Me.Panel9.Location = New System.Drawing.Point(21, 39)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(368, 667)
-        Me.Panel9.TabIndex = 1
+        Me.Panel_left.AutoScroll = True
+        Me.Panel_left.Controls.Add(Me.Button7)
+        Me.Panel_left.Controls.Add(Me.Button6)
+        Me.Panel_left.Controls.Add(Me.Button5)
+        Me.Panel_left.Controls.Add(Me.Button4)
+        Me.Panel_left.Controls.Add(Me.Button3)
+        Me.Panel_left.Controls.Add(Me.menu_TestForm1)
+        Me.Panel_left.Controls.Add(Me.menu_CRUDSimpleTest)
+        Me.Panel_left.Location = New System.Drawing.Point(21, 39)
+        Me.Panel_left.Name = "Panel_left"
+        Me.Panel_left.Size = New System.Drawing.Size(368, 667)
+        Me.Panel_left.TabIndex = 1
         '
         'Button7
         '
@@ -234,40 +331,35 @@ Partial Class MainMenu
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button2
+        'menu_TestForm1
         '
-        Me.Button2.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(5, 138)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(334, 131)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.menu_TestForm1.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.menu_TestForm1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.menu_TestForm1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.menu_TestForm1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.menu_TestForm1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.menu_TestForm1.ForeColor = System.Drawing.Color.White
+        Me.menu_TestForm1.Location = New System.Drawing.Point(5, 138)
+        Me.menu_TestForm1.Name = "menu_TestForm1"
+        Me.menu_TestForm1.Size = New System.Drawing.Size(334, 131)
+        Me.menu_TestForm1.TabIndex = 1
+        Me.menu_TestForm1.Text = "TestForm1"
+        Me.menu_TestForm1.UseVisualStyleBackColor = True
         '
-        'Button1
+        'menu_CRUDSimpleTest
         '
-        Me.Button1.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(5, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(334, 131)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(28, 20)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 0
-        Me.Button9.Text = "Button9"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.menu_CRUDSimpleTest.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.menu_CRUDSimpleTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.menu_CRUDSimpleTest.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.menu_CRUDSimpleTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.menu_CRUDSimpleTest.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.menu_CRUDSimpleTest.ForeColor = System.Drawing.Color.White
+        Me.menu_CRUDSimpleTest.Location = New System.Drawing.Point(5, 6)
+        Me.menu_CRUDSimpleTest.Name = "menu_CRUDSimpleTest"
+        Me.menu_CRUDSimpleTest.Size = New System.Drawing.Size(334, 131)
+        Me.menu_CRUDSimpleTest.TabIndex = 0
+        Me.menu_CRUDSimpleTest.Text = "CRUDSimpleTest"
+        Me.menu_CRUDSimpleTest.UseVisualStyleBackColor = False
         '
         'MainMenu
         '
@@ -277,7 +369,7 @@ Partial Class MainMenu
         Me.ClientSize = New System.Drawing.Size(1524, 918)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Panel8)
-        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Panel_Right)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -289,9 +381,10 @@ Partial Class MainMenu
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel_Right.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
+        Me.Panel_left.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -303,16 +396,21 @@ Partial Class MainMenu
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel_Right As Panel
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel_left As Panel
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents menu_TestForm1 As Button
+    Friend WithEvents menu_CRUDSimpleTest As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents btn_frm_3 As Button
+    Friend WithEvents btn_frm_2 As Button
+    Friend WithEvents btn_frm_1 As Button
+    Friend WithEvents btn_frm_4 As Button
 End Class

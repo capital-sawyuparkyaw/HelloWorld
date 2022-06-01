@@ -140,5 +140,20 @@
   <ItemGroup>
     <None Include="Resources\bn_10.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pb_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bn_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bn_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRUDSimpleTest\CRUDSimpleTest.vbproj">
+      <Project>{f736e4ba-12b0-4eea-9c17-2bb53053eaea}</Project>
+      <Name>CRUDSimpleTest</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
