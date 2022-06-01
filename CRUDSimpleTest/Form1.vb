@@ -5,6 +5,22 @@ Public Class CRUDSimpleTest
     Private Sub CRUDSimpleTest_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox1.Select()
         BindGrid()
+        GridDesign()
+    End Sub
+    Private Sub GridDesign()
+        DataGridView1.DefaultCellStyle.Font = New Font("MS Gothic", 9, FontStyle.Regular)
+        DataGridView1.EnableHeadersVisualStyles = False
+        DataGridView1.ColumnHeadersDefaultCellStyle.Font = New Font(DataGridView1.Font, FontStyle.Bold)
+        DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(191, 191, 191)
+        DataGridView1.BackgroundColor = Color.FromArgb(198, 224, 180)
+        DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(221, 235, 247)
+        DataGridView1.AutoGenerateColumns = False
+        DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.AllowUserToResizeRows = False
+
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        DataGridView1.ColumnHeadersHeight = 25
     End Sub
     Private Sub BindGrid()
         Dim constring As String = "Data Source=163.43.105.244;Initial Catalog=Accele_Test;User ID=sa;Password=admin123456!;Connect Timeout=30"
@@ -98,6 +114,5 @@ Public Class CRUDSimpleTest
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         SearchForm.Show()
-        Me.Hide()
     End Sub
 End Class
