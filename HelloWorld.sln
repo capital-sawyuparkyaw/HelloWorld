@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VB.Net_Control", "VB.Net_Co
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Test_Textbox1", "Test_Textbox1\Test_Textbox1.vbproj", "{4E49AE52-1A4B-4EDD-A253-B0D4AC685990}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Custom_Controls", "Custom_Controls\Custom_Controls.vbproj", "{0DB70FD3-04E4-472B-A38B-051492F8F34F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{4E49AE52-1A4B-4EDD-A253-B0D4AC685990}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E49AE52-1A4B-4EDD-A253-B0D4AC685990}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E49AE52-1A4B-4EDD-A253-B0D4AC685990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB70FD3-04E4-472B-A38B-051492F8F34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB70FD3-04E4-472B-A38B-051492F8F34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB70FD3-04E4-472B-A38B-051492F8F34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB70FD3-04E4-472B-A38B-051492F8F34F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
