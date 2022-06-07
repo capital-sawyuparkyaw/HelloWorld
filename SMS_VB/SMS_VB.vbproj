@@ -154,6 +154,10 @@
       <Project>{f736e4ba-12b0-4eea-9c17-2bb53053eaea}</Project>
       <Name>CRUDSimpleTest</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Custom_Controls\Custom_Controls.vbproj">
+      <Project>{0DB70FD3-04E4-472B-A38B-051492F8F34F}</Project>
+      <Name>Custom_Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestForm1\TestForm1.vbproj">
       <Project>{574b4218-18cf-490c-87c2-9e8f6eb1fbef}</Project>
       <Name>TestForm1</Name>

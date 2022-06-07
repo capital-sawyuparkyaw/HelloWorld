@@ -47,6 +47,7 @@ Partial Class MainMenu
         Me.Button3 = New System.Windows.Forms.Button()
         Me.menu_TestForm1 = New System.Windows.Forms.Button()
         Me.menu_CRUDSimpleTest = New System.Windows.Forms.Button()
+        Me.Custom_textbox2 = New Custom_Controls.custom_textbox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -173,6 +174,7 @@ Partial Class MainMenu
         '
         Me.Panel_Right.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pm_6
         Me.Panel_Right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_Right.Controls.Add(Me.Custom_textbox2)
         Me.Panel_Right.Controls.Add(Me.btn_frm_4)
         Me.Panel_Right.Controls.Add(Me.btn_frm_3)
         Me.Panel_Right.Controls.Add(Me.btn_frm_2)
@@ -361,6 +363,13 @@ Partial Class MainMenu
         Me.menu_CRUDSimpleTest.Text = "CRUDSimpleTest"
         Me.menu_CRUDSimpleTest.UseVisualStyleBackColor = False
         '
+        'Custom_textbox2
+        '
+        Me.Custom_textbox2.Location = New System.Drawing.Point(175, 362)
+        Me.Custom_textbox2.Name = "Custom_textbox2"
+        Me.Custom_textbox2.Size = New System.Drawing.Size(100, 20)
+        Me.Custom_textbox2.TabIndex = 6
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -383,6 +392,7 @@ Partial Class MainMenu
         Me.Panel3.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.Panel_Right.ResumeLayout(False)
+        Me.Panel_Right.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel_left.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -413,4 +423,5 @@ Partial Class MainMenu
     Friend WithEvents btn_frm_2 As Button
     Friend WithEvents btn_frm_1 As Button
     Friend WithEvents btn_frm_4 As Button
+    Friend WithEvents Custom_textbox2 As Custom_Controls.custom_textbox
 End Class
