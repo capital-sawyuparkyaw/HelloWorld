@@ -134,5 +134,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Custom_Controls\Custom_Controls.vbproj">
+      <Project>{0db70fd3-04e4-472b-a38b-051492f8f34f}</Project>
+      <Name>Custom_Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
