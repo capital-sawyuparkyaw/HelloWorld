@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class MainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainMenu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -33,6 +33,11 @@ Partial Class MainMenu
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Panel_Right = New System.Windows.Forms.Panel()
+        Me.btn_frm_4 = New System.Windows.Forms.Button()
+        Me.btn_frm_3 = New System.Windows.Forms.Button()
+        Me.btn_frm_2 = New System.Windows.Forms.Button()
+        Me.btn_frm_1 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel_left = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -42,18 +47,14 @@ Partial Class MainMenu
         Me.Button3 = New System.Windows.Forms.Button()
         Me.menu_TestForm1 = New System.Windows.Forms.Button()
         Me.menu_CRUDSimpleTest = New System.Windows.Forms.Button()
-        Me.btn_frm_1 = New System.Windows.Forms.Button()
-        Me.btn_frm_2 = New System.Windows.Forms.Button()
-        Me.btn_frm_3 = New System.Windows.Forms.Button()
-        Me.btn_frm_4 = New System.Windows.Forms.Button()
-        Me.Panel_Right = New System.Windows.Forms.Panel()
+        Me.Custom_textbox2 = New Custom_Controls.custom_textbox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel8.SuspendLayout()
+        Me.Panel_Right.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel_left.SuspendLayout()
-        Me.Panel_Right.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -168,6 +169,79 @@ Partial Class MainMenu
         Me.Button10.TabIndex = 0
         Me.Button10.Text = "メッセージ"
         Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Panel_Right
+        '
+        Me.Panel_Right.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pm_6
+        Me.Panel_Right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_Right.Controls.Add(Me.Custom_textbox2)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_4)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_3)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_2)
+        Me.Panel_Right.Controls.Add(Me.btn_frm_1)
+        Me.Panel_Right.Location = New System.Drawing.Point(429, 91)
+        Me.Panel_Right.Name = "Panel_Right"
+        Me.Panel_Right.Size = New System.Drawing.Size(1083, 727)
+        Me.Panel_Right.TabIndex = 2
+        '
+        'btn_frm_4
+        '
+        Me.btn_frm_4.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_4.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_4.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_4.Location = New System.Drawing.Point(380, 174)
+        Me.btn_frm_4.Name = "btn_frm_4"
+        Me.btn_frm_4.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_4.TabIndex = 4
+        Me.btn_frm_4.Text = "btn_frm_4"
+        Me.btn_frm_4.UseVisualStyleBackColor = False
+        '
+        'btn_frm_3
+        '
+        Me.btn_frm_3.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_3.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_3.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_3.Location = New System.Drawing.Point(15, 174)
+        Me.btn_frm_3.Name = "btn_frm_3"
+        Me.btn_frm_3.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_3.TabIndex = 3
+        Me.btn_frm_3.Text = "btn_frm_3"
+        Me.btn_frm_3.UseVisualStyleBackColor = False
+        '
+        'btn_frm_2
+        '
+        Me.btn_frm_2.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_2.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_2.Location = New System.Drawing.Point(380, 22)
+        Me.btn_frm_2.Name = "btn_frm_2"
+        Me.btn_frm_2.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_2.TabIndex = 2
+        Me.btn_frm_2.Text = "btn_frm_2"
+        Me.btn_frm_2.UseVisualStyleBackColor = True
+        '
+        'btn_frm_1
+        '
+        Me.btn_frm_1.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
+        Me.btn_frm_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_frm_1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btn_frm_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_frm_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_frm_1.ForeColor = System.Drawing.Color.White
+        Me.btn_frm_1.Location = New System.Drawing.Point(15, 23)
+        Me.btn_frm_1.Name = "btn_frm_1"
+        Me.btn_frm_1.Size = New System.Drawing.Size(334, 131)
+        Me.btn_frm_1.TabIndex = 1
+        Me.btn_frm_1.Text = "btn_frm_1"
+        Me.btn_frm_1.UseVisualStyleBackColor = False
         '
         'Panel5
         '
@@ -289,77 +363,13 @@ Partial Class MainMenu
         Me.menu_CRUDSimpleTest.Text = "CRUDSimpleTest"
         Me.menu_CRUDSimpleTest.UseVisualStyleBackColor = False
         '
-        'btn_frm_1
+        'Custom_textbox2
         '
-        Me.btn_frm_1.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.btn_frm_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_frm_1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_frm_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_frm_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_frm_1.ForeColor = System.Drawing.Color.White
-        Me.btn_frm_1.Location = New System.Drawing.Point(15, 23)
-        Me.btn_frm_1.Name = "btn_frm_1"
-        Me.btn_frm_1.Size = New System.Drawing.Size(334, 131)
-        Me.btn_frm_1.TabIndex = 1
-        Me.btn_frm_1.Text = "btn_frm_1"
-        Me.btn_frm_1.UseVisualStyleBackColor = False
-        '
-        'btn_frm_2
-        '
-        Me.btn_frm_2.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.btn_frm_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_frm_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_frm_2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_frm_2.ForeColor = System.Drawing.Color.White
-        Me.btn_frm_2.Location = New System.Drawing.Point(380, 22)
-        Me.btn_frm_2.Name = "btn_frm_2"
-        Me.btn_frm_2.Size = New System.Drawing.Size(334, 131)
-        Me.btn_frm_2.TabIndex = 2
-        Me.btn_frm_2.Text = "btn_frm_2"
-        Me.btn_frm_2.UseVisualStyleBackColor = True
-        '
-        'btn_frm_3
-        '
-        Me.btn_frm_3.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.btn_frm_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_frm_3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_frm_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_frm_3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_frm_3.ForeColor = System.Drawing.Color.White
-        Me.btn_frm_3.Location = New System.Drawing.Point(15, 174)
-        Me.btn_frm_3.Name = "btn_frm_3"
-        Me.btn_frm_3.Size = New System.Drawing.Size(334, 131)
-        Me.btn_frm_3.TabIndex = 3
-        Me.btn_frm_3.Text = "btn_frm_3"
-        Me.btn_frm_3.UseVisualStyleBackColor = False
-        '
-        'btn_frm_4
-        '
-        Me.btn_frm_4.BackgroundImage = Global.SMS_VB.My.Resources.Resources.bm_3
-        Me.btn_frm_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_frm_4.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_frm_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_frm_4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_frm_4.ForeColor = System.Drawing.Color.White
-        Me.btn_frm_4.Location = New System.Drawing.Point(380, 174)
-        Me.btn_frm_4.Name = "btn_frm_4"
-        Me.btn_frm_4.Size = New System.Drawing.Size(334, 131)
-        Me.btn_frm_4.TabIndex = 4
-        Me.btn_frm_4.Text = "btn_frm_4"
-        Me.btn_frm_4.UseVisualStyleBackColor = False
-        '
-        'Panel_Right
-        '
-        Me.Panel_Right.BackgroundImage = Global.SMS_VB.My.Resources.Resources.pm_6
-        Me.Panel_Right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_Right.Controls.Add(Me.btn_frm_4)
-        Me.Panel_Right.Controls.Add(Me.btn_frm_3)
-        Me.Panel_Right.Controls.Add(Me.btn_frm_2)
-        Me.Panel_Right.Controls.Add(Me.btn_frm_1)
-        Me.Panel_Right.Location = New System.Drawing.Point(429, 91)
-        Me.Panel_Right.Name = "Panel_Right"
-        Me.Panel_Right.Size = New System.Drawing.Size(1083, 727)
-        Me.Panel_Right.TabIndex = 2
+        Me.Custom_textbox2.Location = New System.Drawing.Point(175, 362)
+        Me.Custom_textbox2.Name = "Custom_textbox2"
+        Me.Custom_textbox2.Size = New System.Drawing.Size(100, 20)
+        Me.Custom_textbox2.TabIndex = 6
+        Me.Custom_textbox2.textbox_type = Custom_Controls.custom_textbox.type.Number
         '
         'MainMenu
         '
@@ -382,9 +392,10 @@ Partial Class MainMenu
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel8.ResumeLayout(False)
+        Me.Panel_Right.ResumeLayout(False)
+        Me.Panel_Right.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel_left.ResumeLayout(False)
-        Me.Panel_Right.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -396,6 +407,7 @@ Partial Class MainMenu
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel_Right As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel_left As Panel
     Friend WithEvents Button7 As Button
@@ -408,9 +420,9 @@ Partial Class MainMenu
     Friend WithEvents Button8 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
-    Friend WithEvents btn_frm_1 As Button
-    Friend WithEvents btn_frm_2 As Button
     Friend WithEvents btn_frm_3 As Button
+    Friend WithEvents btn_frm_2 As Button
+    Friend WithEvents btn_frm_1 As Button
     Friend WithEvents btn_frm_4 As Button
-    Friend WithEvents Panel_Right As Panel
+    Friend WithEvents Custom_textbox2 As Custom_Controls.custom_textbox
 End Class

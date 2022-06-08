@@ -11,22 +11,37 @@ Imports System.Drawing
 Imports System.Globalization
 Public Class custom_textbox
     Inherits TextBox
+
+    Public textboxtype As type
     Public Enum type
-        origin = 0
-        number = 1
-        ddate = 2
-        price = 3
+        Origin = 0
+        Number = 1
+        DDate = 2
+        Price = 3
     End Enum
 
     <Browsable(True)>
     <Description("Select Textbox Type")>
     <Category("Custom Properties")>
+    <DisplayName("Type")>
     Public Property textbox_type As type
         Get
-            Return textbox_type
+            Return textboxtype
         End Get
-        Private Set(ByVal value As type)
-            textbox_type = value
+        Set(ByVal value As type)
+            textboxtype = value
         End Set
     End Property
+
+
+    Protected Overrides Sub OnKeyPress(e As KeyPressEventArgs)
+        MyBase.OnKeyPress(e)
+
+        If textbox_type = type.Number Then
+            If Char.IsDigit(e.KeyChar) Then
+                e.Handled = False
+            Else e.Handled = True
+            End If
+        End If
+    End Sub
 End Class
