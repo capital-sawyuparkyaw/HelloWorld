@@ -70,6 +70,9 @@
     <Compile Include="Common_Label.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="custom_gridview.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custom_textbox.vb">
       <SubType>Component</SubType>
     </Compile>
