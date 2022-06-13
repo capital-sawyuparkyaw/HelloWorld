@@ -77,44 +77,22 @@ Public Class SearchForm
         Dim SaveFileDialog1 As New SaveFileDialog()
         SaveFileDialog1.Filter = "Excel files (*.xlsx)|*.xlsx"
         SaveFileDialog1.FilterIndex = 2
+        SaveFileDialog1.Title = "Save"
+        SaveFileDialog1.FileName = "TestExcelFormat"
         SaveFileDialog1.RestoreDirectory = True
-        If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
-            xlWorkSheet.SaveAs(SaveFileDialog1.FileName)
-            MsgBox("Save file success")
+        Dim folderpath As String = "C:\\Excel\\"
+        If Directory.Exists(folderpath) Then
+            If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+                xlWorkSheet.SaveAs(SaveFileDialog1.FileName)
+                MsgBox("Save file success")
+            Else
+                Return
+            End If
         Else
-            Return
+            Directory.CreateDirectory(folderpath)
         End If
         xlWorkBook.Close()
         xlapp.Quit()
-        'Try
-        '    Dim folderPath As String
-        '    Dim filename As String = "TestingExcel"
-        '    folderPath = "C:\\Excel\\"
-        '    If Directory.Exists(folderPath) Then
-        '        Dim xlApp As Microsoft.Office.Interop.Excel.Application
-        '        Dim xlWorkbook As Microsoft.Office.Interop.Excel.Workbook
-        '        Dim xlWorkSheet As Microsoft.Office.Interop.Excel.Worksheet
-        '        Dim misValue As Object = System.Reflection.Missing.Value
-        '        Dim i As Integer
-        '        Dim j As Integer
-        '        xlApp = New Microsoft.Office.Interop.Excel.Application
-        '        xlWorkbook = xlApp.Workbooks.Add(misValue)
-        '        xlWorkSheet = xlWorkbook.Sheets("sheet1")
-        '        xlWorkSheet.Columns.AutoFit()
-        '        For i = 0 To DataGridView1.Rows.Count - 2
-        '            For j = 0 To DataGridView1.Columns.Count - 1
-        '                For k As Integer = 1 To DataGridView1.Columns.Count
-        '                    xlWorkSheet.Cells(1, k) = DataGridView1.Columns(k - 1).HeaderText
-        '                    xlWorkSheet.Cells(i + 2, j + 1) = DataGridView1(j, 1).Value.ToString
-        '                Next
-        '            Next
-        '        Next
-        '    Else
-        '        Directory.CreateDirectory(folderPath)
-        '    End If
-        'Catch ex As Exception
-
-        'End Try
     End Sub
 
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
