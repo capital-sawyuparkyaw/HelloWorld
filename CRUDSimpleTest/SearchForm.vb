@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.IO
 Public Class SearchForm
-    Dim CostCD As String = String.Empty
+    Public Property CostCD As String
     Dim savedialog As SaveFileDialog
     Private Sub SearchForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -75,5 +75,15 @@ Public Class SearchForm
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        GetData()
+    End Sub
+    Public Sub GetData()
+        If DataGridView1.CurrentRow IsNot "" AndAlso DataGridView1.CurrentRow.Index >= 0 Then
+            CostCD = DataGridView1.CurrentRow.Cells(1).Value.ToString()
+            Me.Close()
+        End If
     End Sub
 End Class
