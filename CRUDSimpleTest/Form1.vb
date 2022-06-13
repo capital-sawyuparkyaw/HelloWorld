@@ -1,5 +1,7 @@
 ﻿Imports System
 Imports System.Data.SqlClient
+Imports Custom_Controls.Common_Label
+
 Public Class CRUDSimpleTest
     Dim Connection As New SqlConnection("Data Source=163.43.105.244;Initial Catalog=Accele_Test;User ID=sa;Password=admin123456!;Connect Timeout=30")
     Private Sub CRUDSimpleTest_Load(sender As Object, e As EventArgs) Handles MyBase.Load
