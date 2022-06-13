@@ -56,9 +56,6 @@
     <Reference Include="Search_Forms">
       <HintPath>..\Search_Forms\bin\Debug\Search_Forms.exe</HintPath>
     </Reference>
-    <Reference Include="SMS_VB">
-      <HintPath>..\SMS_VB\bin\Debug\SMS_VB.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />

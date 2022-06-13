@@ -38,6 +38,7 @@ Partial Class CRUDSimpleTest
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.UserControl11 = New Search_Forms.UserControl1()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -196,11 +197,30 @@ Partial Class CRUDSimpleTest
         Me.Button1.Text = "･･･"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'UserControl11
+        '
+        Me.UserControl11.ChangeDate = ""
+        Me.UserControl11.Code = ""
+        Me.UserControl11.CodeWidth = 100
+        Me.UserControl11.CodeWidth1 = 100
+        Me.UserControl11.Font_Size = Search_Forms.UserControl1.FontSize.Normal
+        Me.UserControl11.LabelText = ""
+        Me.UserControl11.LabelVisible = False
+        Me.UserControl11.Location = New System.Drawing.Point(378, 50)
+        Me.UserControl11.Name = "UserControl11"
+        Me.UserControl11.NameWidth = 281
+        Me.UserControl11.SearchEnable = True
+        Me.UserControl11.Size = New System.Drawing.Size(133, 50)
+        Me.UserControl11.Stype = Search_Forms.UserControl1.SearchType.Test1
+        Me.UserControl11.TabIndex = 24
+        Me.UserControl11.UseChangeDate = False
+        '
         'CRUDSimpleTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 703)
+        Me.Controls.Add(Me.UserControl11)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnUpdate)
@@ -239,4 +259,5 @@ Partial Class CRUDSimpleTest
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
+    Friend WithEvents UserControl11 As Search_Forms.UserControl1
 End Class
