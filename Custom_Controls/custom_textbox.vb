@@ -461,11 +461,11 @@ Public Class custom_textbox
         End If
     End Function
     Public Function IsDate(ByVal value) As Boolean
+        Dim dateValue As Date
         Return DateTime.TryParseExact(value,
                        "yyyy/MM/dd",
                        System.Globalization.CultureInfo.InvariantCulture,
-                       DateTimeStyles.None,
-                       ByVal DateTime d)
+                       DateTimeStyles.None, dateValue)
     End Function
     Public Function IsTime(ByVal hr, ByVal min, ByVal sec) As Boolean
         If Convert.ToInt32(hr) > 23 Or Convert.ToInt32(min) > 59 Or Convert.ToInt32(sec) > 59 Then
