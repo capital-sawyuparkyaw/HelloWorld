@@ -285,7 +285,7 @@ Public Class custom_textbox
         End If
         If str.Length = 6 Then
             Dim year = Text.Substring(0, 4).ToString()
-            Dim mn = Text.Substring(Text.Length - 2, 2).ToString().PadLeft(2, "0").ToString();
+            Dim mn = Text.Substring(Text.Length - 2, 2).ToString().PadLeft(2, "0").ToString()
             If (mn.Length = 2) Then
                 If ((Convert.ToInt32(mn)) > 12 Or (Convert.ToInt32(mn)) = 0) Then
                     MessageBox.Show("Date is Incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -461,11 +461,11 @@ Public Class custom_textbox
         End If
     End Function
     Public Function IsDate(ByVal value) As Boolean
+        Dim dateValue As Date
         Return DateTime.TryParseExact(value,
                        "yyyy/MM/dd",
                        System.Globalization.CultureInfo.InvariantCulture,
-                       DateTimeStyles.None,
-                       ByVal DateTime d)
+                       DateTimeStyles.None, dateValue)
     End Function
     Public Function IsTime(ByVal hr, ByVal min, ByVal sec) As Boolean
         If Convert.ToInt32(hr) > 23 Or Convert.ToInt32(min) > 59 Or Convert.ToInt32(sec) > 59 Then
