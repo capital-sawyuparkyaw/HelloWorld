@@ -285,7 +285,7 @@ Public Class custom_textbox
         End If
         If str.Length = 6 Then
             Dim year = Text.Substring(0, 4).ToString()
-            Dim mn = Text.Substring(Text.Length - 2, 2).ToString().PadLeft(2, "0").ToString();
+            Dim mn = Text.Substring(Text.Length - 2, 2).ToString().PadLeft(2, "0").ToString()
             If (mn.Length = 2) Then
                 If ((Convert.ToInt32(mn)) > 12 Or (Convert.ToInt32(mn)) = 0) Then
                     MessageBox.Show("Date is Incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

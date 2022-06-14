@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmExcelImport.Designer.vb">
+      <DependentUpon>frmExcelImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcelImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmExcelImport.resx">
+      <DependentUpon>frmExcelImport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
