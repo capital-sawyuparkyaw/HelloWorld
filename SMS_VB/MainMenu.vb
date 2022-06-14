@@ -13,7 +13,7 @@
         If btn.Text = "CRUDSimpleTest" Then
             btn_frm_1.Visible = True
             btn_frm_2.Visible = True
-            btn_frm_3.Visible = False
+            btn_frm_3.Visible = True
             btn_frm_4.Visible = False
 
             btn_frm_1.Name = "btn_frm_CRUDSimpleTest"
@@ -21,6 +21,9 @@
 
             btn_frm_2.Name = "SearchForm"
             btn_frm_2.Text = "SearchForm"
+
+            btn_frm_3.Name = "frmExcelImport"
+            btn_frm_3.Text = "Excel Import to table"
         ElseIf btn.Text = "TestForm1" Then
             btn_frm_1.Visible = True
             btn_frm_2.Visible = False
@@ -50,6 +53,13 @@
     Private Sub btn_frm_2_Click(sender As Object, e As EventArgs) Handles btn_frm_2.Click
         If btn_frm_2.Text = "SearchForm" Then
             Dim newfrm = New CRUDSimpleTest.SearchForm
+            newfrm.Show()
+        End If
+    End Sub
+
+    Private Sub btn_frm_3_Click(sender As Object, e As EventArgs) Handles btn_frm_3.Click
+        If btn_frm_3.Text = "Excel Import to table" Then
+            Dim newfrm = New SMS_VB.frmExcelImport
             newfrm.Show()
         End If
     End Sub
