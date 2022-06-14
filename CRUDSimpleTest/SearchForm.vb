@@ -42,8 +42,6 @@ Public Class SearchForm
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        'CRUDSimpleTest.TextBox1.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString()
-        'CRUDSimpleTest.TextBox1.Select()
         GetData()
         CRUDSimpleTest.UserControl11.Code = CostCD
         CRUDSimpleTest.UserControl11.Select()
@@ -105,5 +103,21 @@ Public Class SearchForm
             CRUDSimpleTest.UserControl11.Select()
             Me.Close()
         End If
+    End Sub
+
+    Private Sub btnExport_Click(sender As Object, e As EventArgs) Handles btnExport.Click
+        Dim csv As String = String.Empty
+        For Each column As DataGridViewColumn In DataGridView1.Columns
+            csv += column.HeaderText & ","c
+        Next
+        csv += vbCr & vbLf
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            For Each cell As DataGridViewCell In row.Cells
+                csv += cell.Value.ToString().Replace(",", ";") & ","c
+            Next
+            csv += vbCr & vbLf
+        Next
+        Dim folderPath As String = "C:\CSV\"
+        File.WriteAllText(folderPath & "DataGridViewExport.csv", csv)
     End Sub
 End Class
