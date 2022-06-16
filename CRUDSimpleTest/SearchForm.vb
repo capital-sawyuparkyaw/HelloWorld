@@ -23,6 +23,7 @@ Public Class SearchForm
                 Using sda As New SqlDataAdapter(cmd)
                     Using dt As New DataTable()
                         sda.Fill(dt)
+                        dt.Columns.Remove("SEQ")
                         DataGridView1.DataSource = dt
                         con.Close()
                     End Using
