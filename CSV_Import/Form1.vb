@@ -53,6 +53,7 @@ Public Class CSV_Import
                         row.ItemArray = TextLine.Split(","c)
                         dt.Rows.Add(row)
                         dataGridview1.DataSource = dt
+                        Custom_gridview1.DataSource = dt
                     Else
                         Exit Do
                     End If
