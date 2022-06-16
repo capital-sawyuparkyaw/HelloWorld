@@ -46,20 +46,20 @@ Partial Class frmExcelImport
         '
         'btnOpenFile
         '
-        Me.btnOpenFile.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.btnOpenFile.BackColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.btnOpenFile.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnOpenFile.DefaultBtnSize = False
         Me.btnOpenFile.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.btnOpenFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpenFile.Font = New System.Drawing.Font("MS Gothic", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnOpenFile.Font_Size = Custom_Controls.custom_button.FontSize.Normal
-        Me.btnOpenFile.Location = New System.Drawing.Point(-32768, 72)
+        Me.btnOpenFile.Location = New System.Drawing.Point(64, 63)
         Me.btnOpenFile.Margin = New System.Windows.Forms.Padding(0, 1, 0, 1)
         Me.btnOpenFile.Name = "btnOpenFile"
-        Me.btnOpenFile.Size = New System.Drawing.Size(0, 30)
+        Me.btnOpenFile.Size = New System.Drawing.Size(136, 39)
         Me.btnOpenFile.TabIndex = 0
         Me.btnOpenFile.Text = "Open File Dialog"
-        Me.btnOpenFile.TextColor = Custom_Controls.custom_button.Button_Color.Normal
+        Me.btnOpenFile.TextColor = Custom_Controls.custom_button.Button_Color.DarkGreen
         Me.btnOpenFile.UseVisualStyleBackColor = False
         '
         'lblFileName
@@ -70,10 +70,10 @@ Partial Class frmExcelImport
         Me.lblFileName.Font = New System.Drawing.Font("MS Gothic", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblFileName.Font_Size = Custom_Controls.Common_Label.FontSize.Medium
         Me.lblFileName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.lblFileName.Location = New System.Drawing.Point(-32768, 73)
+        Me.lblFileName.Location = New System.Drawing.Point(213, 72)
         Me.lblFileName.Margin = New System.Windows.Forms.Padding(0)
         Me.lblFileName.Name = "lblFileName"
-        Me.lblFileName.Size = New System.Drawing.Size(0, 16)
+        Me.lblFileName.Size = New System.Drawing.Size(118, 22)
         Me.lblFileName.TabIndex = 1
         Me.lblFileName.Text = "File Name"
         Me.lblFileName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -106,12 +106,12 @@ Partial Class frmExcelImport
         Me.gvProjectData.DefaultCellStyle = DataGridViewCellStyle3
         Me.gvProjectData.EnableHeadersVisualStyles = False
         Me.gvProjectData.GridColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.gvProjectData.Location = New System.Drawing.Point(-32768, 146)
+        Me.gvProjectData.Location = New System.Drawing.Point(100, 146)
         Me.gvProjectData.Margin = New System.Windows.Forms.Padding(0, 3, 0, 3)
         Me.gvProjectData.Name = "gvProjectData"
         Me.gvProjectData.RowHeight_ = 20
         Me.gvProjectData.RowTemplate.Height = 20
-        Me.gvProjectData.Size = New System.Drawing.Size(0, 627)
+        Me.gvProjectData.Size = New System.Drawing.Size(1259, 627)
         Me.gvProjectData.TabIndex = 2
         Me.gvProjectData.UseRowNo = True
         Me.gvProjectData.UseSetting = False
@@ -194,10 +194,10 @@ Partial Class frmExcelImport
         '
         'frmExcelImport
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1476, 810)
+        Me.ClientSize = New System.Drawing.Size(1484, 810)
         Me.Controls.Add(Me.gvProjectData)
         Me.Controls.Add(Me.lblFileName)
         Me.Controls.Add(Me.btnOpenFile)
