@@ -34,7 +34,6 @@ Partial Class MainMenu
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Panel_Right = New System.Windows.Forms.Panel()
-        Me.Custom_textbox2 = New Custom_Controls.custom_textbox()
         Me.btn_frm_4 = New System.Windows.Forms.Button()
         Me.btn_frm_3 = New System.Windows.Forms.Button()
         Me.btn_frm_2 = New System.Windows.Forms.Button()
@@ -48,6 +47,7 @@ Partial Class MainMenu
         Me.Button3 = New System.Windows.Forms.Button()
         Me.menu_TestForm1 = New System.Windows.Forms.Button()
         Me.menu_CRUDSimpleTest = New System.Windows.Forms.Button()
+        Me.Custom_textbox2 = New Custom_Controls.custom_textbox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -183,16 +183,6 @@ Partial Class MainMenu
         Me.Panel_Right.Name = "Panel_Right"
         Me.Panel_Right.Size = New System.Drawing.Size(1083, 727)
         Me.Panel_Right.TabIndex = 2
-        '
-        'Custom_textbox2
-        '
-        Me.Custom_textbox2.allow_minus = True
-        Me.Custom_textbox2.is_required = False
-        Me.Custom_textbox2.Location = New System.Drawing.Point(175, 362)
-        Me.Custom_textbox2.Name = "Custom_textbox2"
-        Me.Custom_textbox2.Size = New System.Drawing.Size(100, 20)
-        Me.Custom_textbox2.TabIndex = 6
-        Me.Custom_textbox2.textbox_type = Custom_Controls.custom_textbox.type.DDate
         '
         'btn_frm_4
         '
@@ -372,6 +362,19 @@ Partial Class MainMenu
         Me.menu_CRUDSimpleTest.TabIndex = 0
         Me.menu_CRUDSimpleTest.Text = "CRUDSimpleTest"
         Me.menu_CRUDSimpleTest.UseVisualStyleBackColor = False
+        '
+        'Custom_textbox2
+        '
+        Me.Custom_textbox2.allow_minus = True
+        Me.Custom_textbox2.Char_Byte = Custom_Controls.custom_textbox.bytes.半角
+        Me.Custom_textbox2.DecimalPlace = 0
+        Me.Custom_textbox2.IntegerPlace = 0
+        Me.Custom_textbox2.is_required = False
+        Me.Custom_textbox2.Location = New System.Drawing.Point(175, 362)
+        Me.Custom_textbox2.Name = "Custom_textbox2"
+        Me.Custom_textbox2.Size = New System.Drawing.Size(100, 20)
+        Me.Custom_textbox2.TabIndex = 6
+        Me.Custom_textbox2.textbox_type = Custom_Controls.custom_textbox.type.DDate
         '
         'MainMenu
         '
