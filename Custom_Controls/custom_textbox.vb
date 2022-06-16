@@ -148,30 +148,30 @@ Public Class custom_textbox
             If IsRequired Then
                 If String.IsNullOrEmpty(txt.Text) Then
                     MessageBox.Show("This text box cannot be empty!", "Error Messge", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                ElseIf textbox_type = type.Number And NumberCheck() Then
-                    Return
-                ElseIf textbox_type = type.DDate And DateCheck() Then
-                    Return
-                ElseIf textbox_type = type.YearMonth And YearMonthCheck() Then
-                    Return
-                ElseIf textbox_type = type.Time And TimeCheck() Then
-                    Return
-                ElseIf textbox_type = type.Price And PriceCheck() Then
-                    Return
+                ElseIf textbox_type = type.Number Then
+                    NumberCheck()
+                ElseIf textbox_type = type.DDate Then
+                    DateCheck()
+                ElseIf textbox_type = type.YearMonth Then
+                    YearMonthCheck()
+                ElseIf textbox_type = type.Time Then
+                    TimeCheck()
+                ElseIf textbox_type = type.Price Then
+                    PriceCheck()
                 ElseIf textbox_type = type.Origin Or textbox_type = type.Number Then
                     Control_Check()
                 End If
             Else
-                If textbox_type = type.Number And NumberCheck() Then
-                    Return
-                ElseIf textbox_type = type.DDate And DateCheck() Then
-                    Return
-                ElseIf textbox_type = type.YearMonth And YearMonthCheck() Then
-                    Return
-                ElseIf textbox_type = type.Time And TimeCheck() Then
-                    Return
-                ElseIf textbox_type = type.Price And PriceCheck() Then
-                    Return
+                If textbox_type = type.Number Then
+                    NumberCheck()
+                ElseIf textbox_type = type.DDate Then
+                    DateCheck()
+                ElseIf textbox_type = type.YearMonth Then
+                    YearMonthCheck()
+                ElseIf textbox_type = type.Time Then
+                    TimeCheck()
+                ElseIf textbox_type = type.Price Then
+                    PriceCheck()
                 ElseIf textbox_type = type.Origin Or textbox_type = type.Number Then
                     Control_Check()
                 End If
