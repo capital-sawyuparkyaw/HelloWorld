@@ -21,6 +21,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Custom_Controls", "Custom_C
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Search_Forms", "Search_Forms\Search_Forms.vbproj", "{81A79BFB-0290-43C9-B69C-E7A8DD6B93F9}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CSV_Import", "CSV_Import\CSV_Import.vbproj", "{A4DFE930-CF96-49D0-810F-AACA280DFFCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{81A79BFB-0290-43C9-B69C-E7A8DD6B93F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A79BFB-0290-43C9-B69C-E7A8DD6B93F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A79BFB-0290-43C9-B69C-E7A8DD6B93F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4DFE930-CF96-49D0-810F-AACA280DFFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DFE930-CF96-49D0-810F-AACA280DFFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DFE930-CF96-49D0-810F-AACA280DFFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DFE930-CF96-49D0-810F-AACA280DFFCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
