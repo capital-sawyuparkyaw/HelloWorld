@@ -25,7 +25,7 @@ Public Class frmExcelImport
                     'For Each cell As IXLCell In row.Cells()
                     '    dt.Columns.Add(cell.Value.ToString())
                     'Next
-                    dtP = CreateDatatable()
+                    dtP = CreateDatatable1()
                     firstRow = False
                 Else
                     dtP.Rows.Add()
@@ -35,10 +35,9 @@ Public Class frmExcelImport
                         i += 1
                     Next
                 End If
-                gvProjectData.DataSource = dtP
-            Next
-            Dim newDt = dtP
+                dgv1.DataSource = dtP
 
+            Next
 
         End Using
     End Sub
@@ -58,6 +57,25 @@ Public Class frmExcelImport
         dt.Columns.Add("TotalAmount")
         dt.Columns.Add("UserID")
         dt.Columns.Add("UserName")
+
+        Return dt
+    End Function
+
+    Private Function CreateDatatable1()
+        Dim dt As New DataTable()
+
+        dt.Columns.Add("ProjectCD1")
+        dt.Columns.Add("ProjectName1")
+        dt.Columns.Add("Year1")
+        dt.Columns.Add("BrandCD1")
+        dt.Columns.Add("BrandName1")
+        dt.Columns.Add("Season1")
+        dt.Columns.Add("PeriodStart1")
+        dt.Columns.Add("PeriodEnd1")
+        dt.Columns.Add("TotalProduction1")
+        dt.Columns.Add("TotalAmount1")
+        dt.Columns.Add("ManagerID")
+        dt.Columns.Add("ManagerName")
 
         Return dt
     End Function
