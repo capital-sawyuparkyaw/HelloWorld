@@ -22,11 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Custom_button4 = New Custom_Controls.custom_button()
-        Me.Custom_button3 = New Custom_Controls.custom_button()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.btnDelete = New Custom_Controls.custom_button()
+        Me.btnUpdate = New Custom_Controls.custom_button()
         Me.btnNew = New Custom_Controls.custom_button()
         Me.btnInsert = New Custom_Controls.custom_button()
         Me.Custom_gridview1 = New Custom_Controls.custom_gridview()
@@ -38,44 +38,48 @@ Partial Class Form1
         Me.txt2 = New Custom_Controls.Common_Label()
         Me.Custom_textbox1 = New Custom_Controls.custom_textbox()
         Me.txt1 = New Custom_Controls.Common_Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Custom_gridview1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Custom_button4
+        'btnDelete
         '
-        Me.Custom_button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Custom_button4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Custom_button4.DefaultBtnSize = False
-        Me.Custom_button4.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Custom_button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Custom_button4.Font = New System.Drawing.Font("MS Gothic", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.Custom_button4.Font_Size = Custom_Controls.custom_button.FontSize.XSmall
-        Me.Custom_button4.Location = New System.Drawing.Point(647, 302)
-        Me.Custom_button4.Margin = New System.Windows.Forms.Padding(1)
-        Me.Custom_button4.Name = "Custom_button4"
-        Me.Custom_button4.Size = New System.Drawing.Size(110, 34)
-        Me.Custom_button4.TabIndex = 12
-        Me.Custom_button4.Text = "Delete"
-        Me.Custom_button4.TextColor = Custom_Controls.custom_button.Button_Color.Green
-        Me.Custom_button4.UseVisualStyleBackColor = False
+        Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDelete.DefaultBtnSize = False
+        Me.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("MS Gothic", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDelete.Font_Size = Custom_Controls.custom_button.FontSize.XSmall
+        Me.btnDelete.Location = New System.Drawing.Point(647, 302)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(110, 34)
+        Me.btnDelete.TabIndex = 12
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.TextColor = Custom_Controls.custom_button.Button_Color.Green
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
-        'Custom_button3
+        'btnUpdate
         '
-        Me.Custom_button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Custom_button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Custom_button3.DefaultBtnSize = False
-        Me.Custom_button3.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.Custom_button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Custom_button3.Font = New System.Drawing.Font("MS Gothic", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.Custom_button3.Font_Size = Custom_Controls.custom_button.FontSize.XSmall
-        Me.Custom_button3.Location = New System.Drawing.Point(466, 302)
-        Me.Custom_button3.Margin = New System.Windows.Forms.Padding(1)
-        Me.Custom_button3.Name = "Custom_button3"
-        Me.Custom_button3.Size = New System.Drawing.Size(110, 34)
-        Me.Custom_button3.TabIndex = 11
-        Me.Custom_button3.Text = "Update"
-        Me.Custom_button3.TextColor = Custom_Controls.custom_button.Button_Color.Yellow
-        Me.Custom_button3.UseVisualStyleBackColor = False
+        Me.btnUpdate.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUpdate.DefaultBtnSize = False
+        Me.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("MS Gothic", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnUpdate.Font_Size = Custom_Controls.custom_button.FontSize.XSmall
+        Me.btnUpdate.Location = New System.Drawing.Point(466, 302)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(110, 34)
+        Me.btnUpdate.TabIndex = 11
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.TextColor = Custom_Controls.custom_button.Button_Color.Yellow
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'btnNew
         '
@@ -115,28 +119,30 @@ Partial Class Form1
         '
         'Custom_gridview1
         '
+        Me.Custom_gridview1.AllowUserToAddRows = False
         Me.Custom_gridview1.AllowUserToDeleteRows = False
         Me.Custom_gridview1.AllowUserToResizeColumns = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.Custom_gridview1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(247, Byte), Integer))
+        Me.Custom_gridview1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
         Me.Custom_gridview1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(180, Byte), Integer))
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Custom_gridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(191, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Custom_gridview1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.Custom_gridview1.ColumnHeadersHeight = 25
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("MS Gothic", 9.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Custom_gridview1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Custom_gridview1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("MS Gothic", 9.0!)
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Custom_gridview1.DefaultCellStyle = DataGridViewCellStyle12
         Me.Custom_gridview1.EnableHeadersVisualStyles = False
         Me.Custom_gridview1.GridColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(180, Byte), Integer))
         Me.Custom_gridview1.Location = New System.Drawing.Point(354, 43)
@@ -243,7 +249,7 @@ Partial Class Form1
         Me.Custom_textbox1.Name = "Custom_textbox1"
         Me.Custom_textbox1.Size = New System.Drawing.Size(100, 20)
         Me.Custom_textbox1.TabIndex = 1
-        Me.Custom_textbox1.textbox_type = Custom_Controls.custom_textbox.type.Number
+        Me.Custom_textbox1.textbox_type = Custom_Controls.custom_textbox.type.Price
         '
         'txt1
         '
@@ -260,13 +266,36 @@ Partial Class Form1
         Me.txt1.Text = "ID"
         Me.txt1.TextColor = Custom_Controls.Common_Label.Text_Color.Normal
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 120
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "First Name"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 120
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "last Name"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 120
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Sum"
+        Me.Column4.Name = "Column4"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(911, 450)
-        Me.Controls.Add(Me.Custom_button4)
-        Me.Controls.Add(Me.Custom_button3)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnNew)
         Me.Controls.Add(Me.btnInsert)
         Me.Controls.Add(Me.Custom_gridview1)
@@ -297,7 +326,11 @@ Partial Class Form1
     Friend WithEvents Custom_gridview1 As Custom_Controls.custom_gridview
     Friend WithEvents btnInsert As Custom_Controls.custom_button
     Friend WithEvents btnNew As Custom_Controls.custom_button
-    Friend WithEvents Custom_button3 As Custom_Controls.custom_button
-    Friend WithEvents Custom_button4 As Custom_Controls.custom_button
+    Friend WithEvents btnUpdate As Custom_Controls.custom_button
+    Friend WithEvents btnDelete As Custom_Controls.custom_button
     Friend WithEvents txt3 As Custom_Controls.Common_Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
 End Class
