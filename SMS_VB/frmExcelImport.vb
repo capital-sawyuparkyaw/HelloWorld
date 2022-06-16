@@ -8,6 +8,7 @@ Public Class frmExcelImport
     Private Sub frmExcelImport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         gvProjectData = New Custom_Controls.custom_gridview()
         gvProjectData.AllowUserToAddRows = False
+        gvProjectData.AutoGenerateColumns = True
     End Sub
     Private Sub btnOpenFile_Click(sender As Object, e As EventArgs) Handles btnOpenFile.Click
         OpenFileDialog.ShowDialog()
@@ -25,7 +26,7 @@ Public Class frmExcelImport
                     'For Each cell As IXLCell In row.Cells()
                     '    dt.Columns.Add(cell.Value.ToString())
                     'Next
-                    dtP = CreateDatatable1()
+                    dtP = CreateDatatable()
                     firstRow = False
                 Else
                     dtP.Rows.Add()
@@ -35,7 +36,7 @@ Public Class frmExcelImport
                         i += 1
                     Next
                 End If
-                dgv1.DataSource = dtP
+                gvProjectData.DataSource = dtP
 
             Next
 
