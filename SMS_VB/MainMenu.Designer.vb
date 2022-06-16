@@ -195,7 +195,7 @@ Partial Class MainMenu
         Me.Custom_textbox2.Name = "Custom_textbox2"
         Me.Custom_textbox2.Size = New System.Drawing.Size(100, 20)
         Me.Custom_textbox2.TabIndex = 6
-        Me.Custom_textbox2.textbox_type = Custom_Controls.custom_textbox.type.Origin
+        Me.Custom_textbox2.textbox_type = Custom_Controls.custom_textbox.type.Price
         '
         'btn_frm_4
         '
