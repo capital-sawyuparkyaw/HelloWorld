@@ -18,7 +18,7 @@ Public Class frmExcelImport
         Using workBook As New XLWorkbook(filepath)
             Dim worksheet As IXLWorksheet = workBook.Worksheet(1)
 
-            Dim dtP As New DataTable()
+            Dim dt As New DataTable()
 
             Dim firstRow As Boolean = True
             For Each row As IXLRow In worksheet.Rows()
@@ -26,17 +26,18 @@ Public Class frmExcelImport
                     'For Each cell As IXLCell In row.Cells()
                     '    dt.Columns.Add(cell.Value.ToString())
                     'Next
-                    dtP = CreateDatatable()
                     firstRow = False
                 Else
-                    dtP.Rows.Add()
+                    dt.Rows.Add()
                     Dim i As Integer = 0
                     For Each cell As IXLCell In row.Cells
-                        dtP.Rows(dtP.Rows.Count - 1)(i) = cell.Value.ToString()
+                        dt.Rows(dt.Rows.Count - 1)(i) = cell.Value.ToString()
                         i += 1
                     Next
                 End If
-                gvProjectData.DataSource = dtP
+
+                Dim colname() As String = {"プロジェクトコード", "プロジェクト名", "年度", "ブランドコード", "ブランドコード1", "シーズン", "予定期間　開始", "予定期間　終了", "総生産数", "総金額", "", "責任者コード", "責任者名"}
+                ' gvProjectData.DataSource = dtP
 
             Next
 
@@ -80,4 +81,6 @@ Public Class frmExcelImport
 
         Return dt
     End Function
+
+
 End Class
